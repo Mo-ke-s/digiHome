@@ -1,0 +1,403 @@
+.global {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #666666;
+  font-family: "PingFang SC", "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Roboto, Arial, sans-serif;
+}
+
+/* Header.jsx */
+.Header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0 20px;
+  place-items: center;
+  background: #e6e6e6;
+  margin: 0;
+  padding: 3px 20px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .Header {
+    padding: 20px;
+  }
+}
+.Header h5 {
+  margin: 0;
+}
+
+.Header div {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.Header img {
+  width: 1em;
+}
+
+.Header p {
+  margin: 10px;
+}
+
+/* TopNav.jsx */
+.digiLgo {
+  display: block;
+  max-height: 50px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  letter-spacing: 0.2em;
+  max-width: 100%;
+}
+
+.englishLink {
+  color: #024a68 !important;
+  padding: 5px 10px;
+  border-color: #024a68 !important;
+  border: 1px solid #024a68 !important;
+}
+
+.englishLink:hover {
+  color: #fff !important;
+  background-color: #024a68 !important;
+}
+
+/* Carousel.jsx */
+.carousel {
+  aspect-ratio: auto 4/1;
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  letter-spacing: 0.2em;
+  border-radius: 20px;
+}
+
+.carouselImg0 {
+  background-image: url("../assets/carousel0.png");
+}
+.carouselImg1 {
+  background-image: url("../assets/carousel1.png");
+}
+.carouselImg2 {
+  background-image: url("../assets/carousel2.png");
+}
+.carouselImg3 {
+  background-image: url("../assets/carousel3.png");
+}
+
+.description {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: -20px;
+  color: rgb(255, 255, 255);
+  height: 35px;
+}
+
+.ArrowButton {
+  position: absolute;
+  z-index: 10;
+  width: 98vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Button {
+  opacity: 0;
+  width: 15%;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-color: transparent; /* 设置背景透明 */
+  border: none;
+  border-radius: 0;
+  outline: none; /* 去掉鼠标聚焦时的轮廓线 */
+}
+
+@media screen and (max-width: 1400px) {
+  .Button {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Button {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Button {
+    height: 100px;
+  }
+}
+
+.Button:hover {
+  opacity: 1;
+}
+
+.detail {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.linkText {
+  background: #ffffff;
+  border-color: #ffffff;
+  font-size: 14px;
+  color: rgb(107, 107, 107);
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+  .description {
+    font-size: 20px;
+    margin: 0;
+  }
+  .detail {
+    font-size: 14px;
+    margin: 0;
+  }
+  .linkText {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
+/* productCard */
+.cardStyle {
+  display: block;
+  margin: 20px 0px 10px 20px;
+  width: 70px !important;
+}
+
+/* .productCase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 10px;
+} */
+
+/* ProductsCase.jsx  SoftwareDefinitionCar.jsx */
+.titleIcon {
+  width: 30px;
+  height: 5px;
+  margin: 0 auto;
+  background: #024a68;
+}
+
+/* 媒体查询方案 */
+.productsCard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 15vw;
+}
+
+@media (max-width: 1200px) {
+  .productsCard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .productsCard {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* AboutDigi.jsx */
+.AboutDigi {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  background: #027ca2;
+  margin: 0;
+  width: auto;
+  min-height: 250px;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.DigiVideo {
+  width: 100%;
+  height: auto;
+  margin: auto 0;
+}
+
+.DigiDescription {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .AboutDigi {
+    flex-direction: row;
+    gap: 40px;
+    padding: 50px 100px;
+  }
+  .DigiVideo {
+    width: 40%;
+  }
+  .DigiDescription {
+    width: 60%;
+  }
+}
+
+.seeMore {
+  max-width: 150px;
+  height: 34px;
+  border: 1px solid;
+  border-color: #ebebeb;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.seeMore:hover {
+  background-color: #fff;
+  color: #000;
+  opacity: 0.7;
+}
+
+/* LatestNews.jsx */
+.LatestNews {
+  width: 100%;
+  height: auto;
+  background-image: url("../assets/LatestNewsBgImg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+  margin: 0;
+  border-radius: 20px;
+}
+
+.NewsLinkList {
+  color: #333333;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  grid-gap: 25px;
+  margin-top: 40px;
+  padding: 0 10vw;
+}
+
+.NewsLinkListLi {
+  width: calc(35vw + 20px);
+  height: 1.2em;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  list-style-type: disc;
+}
+
+@media (max-width: 1000px) {
+  .NewsLinkList {
+    grid-template-columns: 1fr;
+  }
+
+  .NewsLinkListLi {
+    width: calc(90vw - 20px);
+  }
+}
+
+.NewsLinkListLi a:hover {
+  color: #027ca2;
+}
+
+.NewsLinkListLi a::before {
+  content: "● ";
+}
+
+/* AutoCarousel.jsx */
+.AutoCarousel {
+  width: auto;
+  padding-top: 50px;
+}
+
+.AutoCarouselImg {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.AutoCarouselImg img {
+  max-width: 200px;
+}
+
+.AutoCarouselImg img:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Foot.jsx */
+
+.Foot {
+  padding: 0;
+  background: #333333;
+  border-color: #7a7a7a;
+  margin: 0;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.FootBar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.ContactMethod svg {
+  padding: 0 5px;
+}
+
+.ContactMethod svg:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 500px) {
+  .FootBar {
+    flex-direction: column;
+  }
+}
+
+.Footer {
+  color: #dbdbdb;
+  font-size: 12px;
+  padding: 20px;
+}
+
+.BackToTop {
+  width: 36px;
+  height: 36px;
+  border-color: #024a68;
+  background-color: #024a68;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  z-index: 100;
+  border: 0;
+}

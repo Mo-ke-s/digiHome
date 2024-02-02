@@ -12,5 +12,4 @@ export default defineConfig({
   publicPath: "/",
   title: "迪捷公司官网首页重构",
   favicons: ["/favicon.png"],
-  ssg: {},
 });
